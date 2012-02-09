@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MentorApps!</string>
+    <string name="app_name">MentorApps-Tennis</string>
+    <string name="Pro">Pro Video</string>
+    <string name="MyVideo">My Video</string>
+    <string name="seeCompare">Pro - Me</string>
+    <string name="Record">Record</string>
+</resources>

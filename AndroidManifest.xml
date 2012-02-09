@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="msc.photint.MentorAppstennis"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:resizeable="true"/>
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity><activity android:name=".MentorApps">
+        </activity>
+        <activity android:name=".Strokesfemale"></activity>
+        <activity android:name=".StrokesMale"></activity>
+        <activity android:name=".Previewbackhandfemale"></activity>
+        <activity android:name=".Probackhandfemale"></activity>
+         <activity android:name="Compare">
+         </activity>
+         <activity android:name="Previewbackhandmale"></activity>
+         <activity android:name="Previewforehandfemale"></activity>
+         <activity android:name="Previewforehandmale"></activity>
+         <activity android:name="Previewservefemale"></activity>
+         <activity android:name="Previewservemale"></activity>
+         <activity android:name="Previewslicefemale"></activity>
+         <activity android:name="Previewslicemale"></activity>
+         <activity android:name="Probackhandfemale"></activity>
+  <activity android:name="Probackhandmale"></activity>
+    <activity android:name="Proforehandfemale"></activity>
+      <activity android:name="Probackhandmale"></activity>
+        <activity android:name="Proservefemale"></activity>
+          <activity android:name="Proservemale"></activity>
+            <activity android:name="Proslicefemale"></activity>
+              <activity android:name="Proslicemale"></activity>
+              <activity android:name="Browser"></activity>
+              <activity android:name="Comparebackhandmale"></activity>
+              <activity android:name="Compareforehandfemale"></activity>
+              <activity android:name="Compareforehandmale"></activity>
+              <activity android:name="Compareservefemale"></activity>
+              <activity android:name="Compareservemale"></activity>
+              <activity android:name="Compareslicefemale"></activity>
+              <activity android:name="Compareslicemale"></activity>
+              <activity android:name="Recordbackhandfemale"></activity>
+              <activity android:name="Recordbackhandmale"></activity>
+              <activity android:name="Recordforehandfemale"></activity>
+              <activity android:name="Recordforehandmale"></activity>
+              <activity android:name="Recordservefemale"></activity>
+              <activity android:name="Recordservemale"></activity>
+              <activity android:name="Recordslicefemale"></activity>
+              <activity android:name="Recordslicemale"></activity>
+              <activity android:name="Comparevolleyfemale"></activity>
+              <activity android:name="Comparevolleymale"></activity>
+              <activity android:name="Previewvolleyfemale"></activity>
+              <activity android:name="Previewvolleymale"></activity>
+              <activity android:name="Provolleyfemale"></activity>
+              <activity android:name="Provolleymale"></activity>
+              <activity android:name="Recordvolleymale"></activity>
+              <activity android:name="Recorvolleyfemale"></activity>
+  
+            </application>
+    
+    
+    <uses-sdk android:minSdkVersion="4"
+    		  android:maxSdkVersion="10"/>
+</manifest>

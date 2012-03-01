@@ -1,70 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
-
-    <VideoView
-        android:id="@+id/videoView1"
-        android:layout_width="fill_parent"
-        android:layout_height="250dp"/>
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/compareback" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:background="@drawable/compareback" />
 
     <VideoView
         android:id="@+id/videoView2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/videoView1" />
- />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_alignBottom="@+id/videoView1"
-        android:layout_alignParentRight="true"
-        android:text="--:--:--"
-        android:textColor="#ffffff" />
-
-    <SeekBar
-        android:id="@+id/seekBar1"
-        android:layout_width="230dp"
-        android:layout_height="25dp"
-        android:layout_alignTop="@+id/textView1"
-        android:layout_toLeftOf="@+id/textView1"
-        android:thumb="@drawable/seek_thumb" />
-
-    <SeekBar
-        android:id="@+id/seekBar2"
-        android:layout_width="230dp"
-        android:layout_height="25dp"
-        android:layout_alignLeft="@+id/seekBar1"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/seekBar1"
-        android:thumb="@drawable/seek_thumb" />
-
-    <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/seekBar2"
-        android:layout_toRightOf="@+id/seekBar1"
-        android:text="--:--:--"
-        android:textColor="#ffffff" />
-
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/button2" />
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentLeft="true" />
+
     <ImageButton
         android:id="@+id/imageButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/seekBar1"
+        android:layout_above="@+id/button2"
         android:layout_alignParentLeft="true"
         android:src="@drawable/ic_media_play" />
-
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:thumb="@drawable/seek_thumb" />
+
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/imageButton1"
         android:src="@drawable/ic_media_play" />
+
+   
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:thumb="@drawable/seek_thumb" />
+
+    
 
 </RelativeLayout>

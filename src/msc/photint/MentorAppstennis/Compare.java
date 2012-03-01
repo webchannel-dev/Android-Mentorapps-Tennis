@@ -16,11 +16,12 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.VideoView;
 
+
 public class Compare extends Activity implements OnErrorListener, OnPreparedListener {
 	/** Called when the activity is first created. */
 	private static final int UPDATE_FREQUENCY = 500;
 
-			private TextView currentTime, duration,currentTime2, duration2;
+		//	private TextView currentTime, duration,currentTime2, duration2;
 
 	private VideoView videoView,videoView2;
 
@@ -93,8 +94,9 @@ public class Compare extends Activity implements OnErrorListener, OnPreparedList
 
 	  
 
-	    currentTime = (TextView) findViewById(R.id.textView1);
-	    currentTime2 = (TextView) findViewById(R.id.textView2);
+	   // currentTime = (TextView) findViewById(R.id.textView1);
+	    //currentTime2 = (TextView) findViewById(R.id.textView2);
+	    
 	  //  duration = (TextView)findViewById(R.id.textView1);
 	  //  duration2 = (TextView)findViewById(R.id.TextView02);
 	 	    videoView.setOnErrorListener(this);
@@ -176,8 +178,8 @@ videoView2.start();
 	    calculateTime(ms);
 	    calculateTime2(ms2);
 
-	    currentTime.setText("" + hh + ":" + mm + ":" + ss);
-	    currentTime2.setText("" + hh2 + ":" + mm2 + ":" + ss2);
+//	    currentTime.setText("" + hh + ":" + mm + ":" + ss);
+	   // currentTime2.setText("" + hh2 + ":" + mm2 + ":" + ss2);
 	    
 	    playButton.setImageResource(android.R.drawable.ic_media_pause);
 	    playbutton2.setImageResource(android.R.drawable.ic_media_pause);
@@ -387,7 +389,7 @@ videoView2.start();
 
 	    calculateTime(ms);
 	    
-	    currentTime.setText("" + hh + ":" + mm + ":" + ss);
+	  //  currentTime.setText("" + hh + ":" + mm + ":" + ss);
 	    
 
 	    handler.postDelayed(updatePositionRunnable, UPDATE_FREQUENCY);
@@ -405,7 +407,7 @@ videoView2.start();
 	   
 	    calculateTime2(ms2);
 	   
-	    currentTime2.setText("" + hh2 + ":" + mm2 + ":" + ss2);
+	   // currentTime2.setText("" + hh2 + ":" + mm2 + ":" + ss2);
 
 	    handler2.postDelayed(updatePositionRunnable2, UPDATE_FREQUENCY);
 	

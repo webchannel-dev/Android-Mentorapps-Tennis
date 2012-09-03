@@ -164,35 +164,35 @@ public class Strokesfemale extends Activity {
     private void forehand() {
     	 Intent intent = new Intent(Strokesfemale.this, Previewforehandfemale.class);
         startActivity(intent);
-     	MediaPlayer mp = MediaPlayer.create(Strokesfemale.this, R.raw.sound);   
-        mp.start();
-        mp.setOnCompletionListener(new OnCompletionListener() {
-
-            
-            public void onCompletion(MediaPlayer mp) {
-                // TODO Auto-generated method stub
-                mp.release();
-            }
-
-        });
-      
+//     	MediaPlayer mp = MediaPlayer.create(Strokesfemale.this, R.raw.sound);   
+//        mp.start();
+//        mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//            
+//            public void onCompletion(MediaPlayer mp) {
+//                // TODO Auto-generated method stub
+//                mp.release();
+//            }
+//
+//        });
+//      
    	       
    	   }
     private void backhand() {
     	 
     	Intent intent = new Intent(Strokesfemale.this, Previewbackhandfemale.class);
    	 startActivity(intent);
- 	MediaPlayer mp = MediaPlayer.create(Strokesfemale.this, R.raw.sound);   
-    mp.start();
-    mp.setOnCompletionListener(new OnCompletionListener() {
-
-        
-        public void onCompletion(MediaPlayer mp) {
-            // TODO Auto-generated method stub
-            mp.release();
-        }
-
-    });
+// 	MediaPlayer mp = MediaPlayer.create(Strokesfemale.this, R.raw.sound);   
+//    mp.start();
+//    mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//        
+//        public void onCompletion(MediaPlayer mp) {
+//            // TODO Auto-generated method stub
+//            mp.release();
+//        }
+//
+//    });
         
           
   	       
@@ -200,35 +200,35 @@ public class Strokesfemale extends Activity {
     private void slice() {
      Intent intent = new Intent(Strokesfemale.this, Previewslicefemale.class);
      startActivity(intent);
- 	MediaPlayer mp = MediaPlayer.create(Strokesfemale.this, R.raw.sound);   
-    mp.start();
-    mp.setOnCompletionListener(new OnCompletionListener() {
-
-        
-        public void onCompletion(MediaPlayer mp) {
-            // TODO Auto-generated method stub
-            mp.release();
-        }
-
-    });
-          
+// 	MediaPlayer mp = MediaPlayer.create(Strokesfemale.this, R.raw.sound);   
+//    mp.start();
+//    mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//        
+//        public void onCompletion(MediaPlayer mp) {
+//            // TODO Auto-generated method stub
+//            mp.release();
+//        }
+//
+//    });
+//          
   	       
   	   }
     private void serve() {
     	 Intent intent = new Intent(Strokesfemale.this, Previewservefemale.class);
         startActivity(intent);
      	
-    	MediaPlayer mp = MediaPlayer.create(Strokesfemale.this, R.raw.sound);   
-        mp.start();
-        mp.setOnCompletionListener(new OnCompletionListener() {
-
-            
-            public void onCompletion(MediaPlayer mp) {
-                // TODO Auto-generated method stub
-                mp.release();
-            }
-
-        });
+//    	MediaPlayer mp = MediaPlayer.create(Strokesfemale.this, R.raw.sound);   
+//        mp.start();
+//        mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//            
+//            public void onCompletion(MediaPlayer mp) {
+//                // TODO Auto-generated method stub
+//                mp.release();
+//            }
+//
+//        });
   	       
   	   }
     private void prem() {
@@ -286,17 +286,17 @@ public class Strokesfemale extends Activity {
     private void volley() {
     	 Intent intent = new Intent(Strokesfemale.this, Previewvolleyfemale.class);
       startActivity(intent);
-  	MediaPlayer mp = MediaPlayer.create(Strokesfemale.this, R.raw.sound);   
-    mp.start();
-    mp.setOnCompletionListener(new OnCompletionListener() {
-
-        
-        public void onCompletion(MediaPlayer mp) {
-            // TODO Auto-generated method stub
-            mp.release();
-        }
-
-    });
+//  	MediaPlayer mp = MediaPlayer.create(Strokesfemale.this, R.raw.sound);   
+//    mp.start();
+//    mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//        
+//        public void onCompletion(MediaPlayer mp) {
+//            // TODO Auto-generated method stub
+//            mp.release();
+//        }
+//
+//    });
           
   	       
   	   }

@@ -101,7 +101,7 @@ public class Proslicemale extends Activity {
         
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-         	 Intent intent = new Intent(Proslicemale.this, Proslicemale.class);
+         	 Intent intent = new Intent(Proslicemale.this, Previewslicemale.class);
              startActivity(intent);
             return true;
         }
@@ -111,7 +111,7 @@ public class Proslicemale extends Activity {
        
     
     private void back() {
-      	 Intent intent = new Intent(Proslicemale.this, Proslicemale.class);
+      	 Intent intent = new Intent(Proslicemale.this, Previewslicemale.class);
            startActivity(intent);
         	
              

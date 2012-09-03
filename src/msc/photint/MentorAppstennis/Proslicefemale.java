@@ -100,7 +100,7 @@ public class Proslicefemale extends Activity {
             	 }
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-        	 Intent intent = new Intent(Proslicefemale.this, Proslicefemale.class);
+        	 Intent intent = new Intent(Proslicefemale.this, Previewslicefemale.class);
              startActivity(intent);
             return true;
         }
@@ -110,7 +110,7 @@ public class Proslicefemale extends Activity {
        
     
     private void back() {
-      	 Intent intent = new Intent(Proslicefemale.this, Proslicefemale.class);
+      	 Intent intent = new Intent(Proslicefemale.this, Previewslicefemale.class);
            startActivity(intent);
         	
              

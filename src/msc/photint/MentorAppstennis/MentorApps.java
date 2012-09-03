@@ -129,7 +129,7 @@ public class MentorApps extends Activity {
     	AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
     	 
         // set the message to display
-        alertbox.setMessage("Start Playing Tennis with Instruction and advice for begineers on StrokesMale,Strategy,rules,terms,and equipment.These free lessons,tips on which racquet to buy and many other resources will help you learn tennis easily.");
+        alertbox.setMessage("Learn from professional coaches and compare your strokes to the way they are executed by professionals."+ "\n\n" + "Your technique does not need to be an exact copy of a professionals but the comparison will highlight any errors in your preparation and execution of the strokes");
 
         // add a neutral button to the alert box and assign a click listener
         alertbox.setNeutralButton("Ok", new DialogInterface.OnClickListener() {

@@ -102,7 +102,7 @@ public class Proservemale extends Activity {
     
 public boolean onKeyDown(int keyCode, KeyEvent event) {
     if (keyCode == KeyEvent.KEYCODE_BACK) {
-   	 Intent intent = new Intent(Proservemale.this, Proservemale.class);
+   	 Intent intent = new Intent(Proservemale.this, Previewservemale.class);
      startActivity(intent);
   	
         return true;
@@ -112,7 +112,7 @@ public boolean onKeyDown(int keyCode, KeyEvent event) {
 
     
     private void back() {
-      	 Intent intent = new Intent(Proservemale.this, Proservemale.class);
+      	 Intent intent = new Intent(Proservemale.this, Previewservemale.class);
            startActivity(intent);
         	
              

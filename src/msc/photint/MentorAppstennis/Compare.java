@@ -104,10 +104,11 @@ public class Compare extends Activity implements OnErrorListener, OnPreparedList
 	    videoView.setOnPreparedListener(this);
 	    videoView2.setOnPreparedListener(this);
 	  
-	    videoView.setVideoURI(Uri.parse("/sdcard/photint/backhandfemale.3gp"));
+	    videoView.setVideoURI(Uri.parse("/sdcard/photint/backhandfem.mp4"));
 	      
-	       String fileName = "android.resource://" + getPackageName() + "/" + R.raw.backhand_fem;
-	       videoView2.setVideoURI(Uri.parse(fileName));
+	       //String fileName = "android.resource://" + getPackageName() + "/" + R.raw.backhand_fem;
+	   // String fileName = "/sdcard/photint/backhandfem.mp4";
+	       videoView2.setVideoURI(Uri.parse("/sdcard/neww.3gp"));
        
         
 	    seekbar.setOnSeekBarChangeListener(seekBarChanged);

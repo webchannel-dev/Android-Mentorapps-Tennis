@@ -38,7 +38,8 @@ public class Probackhandfemale extends Activity {
         
         VideoView vv = (VideoView)this.findViewById(R.id.video);
         vv.setMediaController(mc);
-        String fileName = "android.resource://" + getPackageName() + "/" + R.raw.backhand_fem;
+      String fileName = "android.resource://msc.photint.MentorAppstennis/" + R.raw.backhand_fem;
+       // String fileName = "file:///android_asset/backhand_fem.mp4";
         vv.getDuration();
         vv.setVideoURI(Uri.parse(fileName));
         
@@ -50,9 +51,9 @@ public class Probackhandfemale extends Activity {
                 // not playVideo
                             // playVideo();
 
-            	Intent intent = new Intent(Probackhandfemale.this, Probackhandfemale.class);
-            	 startActivity(intent);
-            	 finish();
+           	Intent intent = new Intent(Probackhandfemale.this, Probackhandfemale.class);
+         	 startActivity(intent);
+           	 finish();
             }
         });
         
@@ -97,7 +98,8 @@ public class Probackhandfemale extends Activity {
         	  }
           });
         
-            	 }
+            	
+    }
         
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
@@ -138,7 +140,7 @@ public class Probackhandfemale extends Activity {
                // click listener on the alert box
                public void onClick(DialogInterface arg0, int arg1) {
                    // the button was clicked
-                   Toast.makeText(getApplicationContext(), "Professional backhand-Female Video", Toast.LENGTH_LONG).show();
+                   Toast.makeText(getApplicationContext(), "Professional backhand-feMale Video", Toast.LENGTH_LONG).show();
                }
            });
 
@@ -153,6 +155,7 @@ public class Probackhandfemale extends Activity {
 
       	   
       	}
-    
+       
+     
    
 }

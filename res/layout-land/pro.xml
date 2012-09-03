@@ -2,12 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
+    
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerInParent="true" />
 
     <RelativeLayout
-        android:id="@+id/relativeLayout1"
+            android:id="@+id/relativeLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/videoslandscape" >
     </RelativeLayout>
@@ -63,12 +72,5 @@
 
     </RelativeLayout>
 
-    <VideoView
-        android:id="@+id/video"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/relativeLayout2"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/relativeLayout1" />
-
+    
 </RelativeLayout>

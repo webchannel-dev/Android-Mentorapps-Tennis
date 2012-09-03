@@ -3,7 +3,7 @@
       package="msc.photint.MentorAppstennis"
       android:versionCode="1"
       android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="7" />
+    <uses-sdk android:minSdkVersion="7"  android:targetSdkVersion="16" android:maxSdkVersion="16"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:resizeable="true"/>
@@ -30,10 +30,10 @@
          <activity android:name="Previewservemale"></activity>
          <activity android:name="Previewslicefemale"></activity>
          <activity android:name="Previewslicemale"></activity>
-         <activity android:name="Probackhandfemale"></activity>
-  <activity android:name="Probackhandmale"></activity>
+         
+  <activity android:name="Probackhandmale" android:screenOrientation="portrait"></activity>
     <activity android:name="Proforehandfemale"></activity>
-      <activity android:name="Probackhandmale"></activity>
+      
         <activity android:name="Proservefemale"></activity>
           <activity android:name="Proservemale"></activity>
             <activity android:name="Proslicefemale"></activity>
@@ -66,6 +66,5 @@
             </application>
     
     
-    <uses-sdk android:minSdkVersion="4"
-    		  android:maxSdkVersion="10"/>
+    
 </manifest>

@@ -20,7 +20,7 @@ public class Compareforehandfemale extends Activity implements OnErrorListener, 
 	/** Called when the activity is first created. */
 	private static final int UPDATE_FREQUENCY = 500;
 
-			private TextView currentTime, duration,currentTime2, duration2;
+		//	private TextView currentTime, duration,currentTime2, duration2;
 
 	private VideoView videoView,videoView2;
 
@@ -93,16 +93,16 @@ public class Compareforehandfemale extends Activity implements OnErrorListener, 
 
 	  
 
-	    currentTime = (TextView) findViewById(R.id.textView1);
-	    currentTime2 = (TextView) findViewById(R.id.textView2);
-	  //  duration = (TextView)findViewById(R.id.textView1);
+	 //   currentTime = (TextView) findViewById(R.id.textView1);
+	  //  currentTime2 = (TextView) findViewById(R.id.textView2);
+	 //  duration = (TextView)findViewById(R.id.textView1);
 	  //  duration2 = (TextView)findViewById(R.id.TextView02);
 	 	    videoView.setOnErrorListener(this);
 	    videoView2.setOnErrorListener(this);
 	    videoView.setOnPreparedListener(this);
 	    videoView2.setOnPreparedListener(this);
 	  
-	    videoView.setVideoURI(Uri.parse("/sdcard/photint/forehandfemale.3gp"));
+	    videoView.setVideoURI(Uri.parse("/sdcard/photint/forehandfem.3gp"));
 	      
 	       String fileName = "android.resource://" + getPackageName() + "/" + R.raw.forehand_fem;
 	       videoView2.setVideoURI(Uri.parse(fileName));
@@ -177,8 +177,8 @@ videoView2.start();
 	    calculateTime(ms);
 	    calculateTime2(ms2);
 
-	    currentTime.setText("" + hh + ":" + mm + ":" + ss);
-	    currentTime2.setText("" + hh2 + ":" + mm2 + ":" + ss2);
+	 //   currentTime.setText("" + hh + ":" + mm + ":" + ss);
+	   // currentTime2.setText("" + hh2 + ":" + mm2 + ":" + ss2);
 	    
 	    playButton.setImageResource(android.R.drawable.ic_media_pause);
 	    playbutton2.setImageResource(android.R.drawable.ic_media_pause);
@@ -388,7 +388,7 @@ videoView2.start();
 
 	    calculateTime(ms);
 	    
-	    currentTime.setText("" + hh + ":" + mm + ":" + ss);
+	   // currentTime.setText("" + hh + ":" + mm + ":" + ss);
 	    
 
 	    handler.postDelayed(updatePositionRunnable, UPDATE_FREQUENCY);
@@ -406,7 +406,7 @@ videoView2.start();
 	   
 	    calculateTime2(ms2);
 	   
-	    currentTime2.setText("" + hh2 + ":" + mm2 + ":" + ss2);
+	   // currentTime2.setText("" + hh2 + ":" + mm2 + ":" + ss2);
 
 	    handler2.postDelayed(updatePositionRunnable2, UPDATE_FREQUENCY);
 	

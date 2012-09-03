@@ -100,7 +100,7 @@ public class Proforehandmale extends Activity {
             	 }
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-        	 Intent intent = new Intent(Proforehandmale.this, Proforehandmale.class);
+        	 Intent intent = new Intent(Proforehandmale.this, Previewforehandmale.class);
              startActivity(intent);
             return true;
         }
@@ -110,7 +110,7 @@ public class Proforehandmale extends Activity {
        
     
     private void back() {
-      	 Intent intent = new Intent(Proforehandmale.this, Proforehandmale.class);
+      	 Intent intent = new Intent(Proforehandmale.this, Previewforehandmale.class);
            startActivity(intent);
         	
              

@@ -8,6 +8,8 @@ import java.io.IOException;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 
@@ -32,10 +34,28 @@ Intent intent;
   public void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
        
+      AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
+ 	 
+      // set the message to display
+  
+  	alertbox.setMessage("Please select a resolution of 640x480 in the camera settings quality options for optimal playback") ;
+      
 
-      Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);  
-      intent.putExtra(MediaStore.EXTRA_OUTPUT, mCapturedImageURI);  
-      startActivityForResult(intent, CAPTURE_PICTURE_INTENT);
+      // add a neutral button to the alert box and assign a click listener
+      alertbox.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+
+          // click listener on the alert box
+          public void onClick(DialogInterface arg0, int arg1) {
+        	  Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);  
+              intent.putExtra(MediaStore.EXTRA_OUTPUT, mCapturedImageURI);  
+              startActivityForResult(intent, CAPTURE_PICTURE_INTENT);
+          }
+      });
+
+      // show it
+      alertbox.show();
+  	
+     
   }
   public boolean onKeyDown(int keyCode, KeyEvent event) {
       if (keyCode == KeyEvent.KEYCODE_BACK) {
@@ -55,7 +75,7 @@ Intent intent;
 	  try {
 	    AssetFileDescriptor videoAsset = getContentResolver().openAssetFileDescriptor(intent.getData(), "r");
 	    FileInputStream fis = videoAsset.createInputStream();
-	    File tmpFile = new File(Environment.getExternalStorageDirectory(),"photint/volleyfemale.3gp"); 
+	    File tmpFile = new File(Environment.getExternalStorageDirectory(),"photint/volleyfem.3gp"); 
 	    FileOutputStream fos = new FileOutputStream(tmpFile);
 
 	    byte[] buf = new byte[1024];

@@ -84,17 +84,17 @@ public class Previewbackhandfemale extends Activity {
             	 
             	Intent intent = new Intent(Previewbackhandfemale.this, Probackhandfemale.class);
            	 startActivity(intent);
-           	MediaPlayer mp = MediaPlayer.create(Previewbackhandfemale.this, R.raw.sound);   
-            mp.start();
-            mp.setOnCompletionListener(new OnCompletionListener() {
-
-                
-                public void onCompletion(MediaPlayer mp) {
-                    // TODO Auto-generated method stub
-                    mp.release();
-                }
-
-            });
+//           	MediaPlayer mp = MediaPlayer.create(Previewbackhandfemale.this, R.raw.sound);   
+//            mp.start();
+//            mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//                
+//                public void onCompletion(MediaPlayer mp) {
+//                    // TODO Auto-generated method stub
+//                    mp.release();
+//                }
+//
+//            });
           	  	        	  
             	  }
               });
@@ -104,17 +104,17 @@ public class Previewbackhandfemale extends Activity {
           
             	Intent intent = new Intent(Previewbackhandfemale.this, Browser.class);
               	 startActivity(intent);
-              	MediaPlayer mp = MediaPlayer.create(Previewbackhandfemale.this, R.raw.sound);   
-                mp.start();
-                mp.setOnCompletionListener(new OnCompletionListener() {
-
-                    
-                    public void onCompletion(MediaPlayer mp) {
-                        // TODO Auto-generated method stub
-                        mp.release();
-                    }
-
-                });
+//              	MediaPlayer mp = MediaPlayer.create(Previewbackhandfemale.this, R.raw.sound);   
+//                mp.start();
+//                mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//                    
+//                    public void onCompletion(MediaPlayer mp) {
+//                        // TODO Auto-generated method stub
+//                        mp.release();
+//                    }
+//
+//                });
           	  	        	  
             	  }
               });
@@ -124,17 +124,17 @@ public class Previewbackhandfemale extends Activity {
 	        	  Intent intent = new Intent(Previewbackhandfemale.this, Compare.class);
 	            	 startActivity(intent);
 	            	 finish();
-	            	 MediaPlayer mp = MediaPlayer.create(Previewbackhandfemale.this, R.raw.sound);   
-	                 mp.start();
-	                 mp.setOnCompletionListener(new OnCompletionListener() {
-
-	                     
-	                     public void onCompletion(MediaPlayer mp) {
-	                         // TODO Auto-generated method stub
-	                         mp.release();
-	                     }
-
-	                 });        	  
+//	            	 MediaPlayer mp = MediaPlayer.create(Previewbackhandfemale.this, R.raw.sound);   
+//	                 mp.start();
+//	                 mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//	                     
+//	                     public void onCompletion(MediaPlayer mp) {
+//	                         // TODO Auto-generated method stub
+//	                         mp.release();
+//	                     }
+//
+//	                 });        	  
 		      	  }
 		        });
         rec.setOnClickListener(new View.OnClickListener() {
@@ -150,17 +150,17 @@ public class Previewbackhandfemale extends Activity {
            	 startActivity(intent);
            	 finish();
 
-           	MediaPlayer mp = MediaPlayer.create(Previewbackhandfemale.this, R.raw.sound);   
-            mp.start();
-            mp.setOnCompletionListener(new OnCompletionListener() {
-
-                
-                public void onCompletion(MediaPlayer mp) {
-                    // TODO Auto-generated method stub
-                    mp.release();
-                }
-
-            });    	  
+//           	MediaPlayer mp = MediaPlayer.create(Previewbackhandfemale.this, R.raw.sound);   
+//            mp.start();
+//            mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//                
+//                public void onCompletion(MediaPlayer mp) {
+//                    // TODO Auto-generated method stub
+//                    mp.release();
+//                }
+//
+//            });    	  
             	  }
               });
    	   }	
@@ -194,7 +194,7 @@ public class Previewbackhandfemale extends Activity {
     	 
         // set the message to display
     
-    	 alertbox.setMessage("Please press a Tennis ball" + "\n"+"1.Mentor - Watch the Professional playing the particular shot" + "\n"+ "2.Record Me- Record and Compare a new video" +"\n"+"3.Compare Me- Shows the comparison of already recorded video with professional" +"\n"+"4.My Gallery - Displays the list of already recorded video") ;
+    	 alertbox.setMessage("Please press a Tennis ball" + "\n \n"+"1.Mentor - Watch a Professional playing the particular shot" +  "\n \n"+ "2.Record Me - Record and Compare a new video of yourself" +"\n \n"+"Compare Me - A comparison of the recorded video with a professional technique" +"\n \n"+"4.My Gallery - Displays the list of recorded videos") ;
         
 
         // add a neutral button to the alert box and assign a click listener

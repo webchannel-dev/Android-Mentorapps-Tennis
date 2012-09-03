@@ -9,6 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/shotslandscape" >
     </RelativeLayout>
@@ -65,15 +66,6 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/slice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/relativeLayout2"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="35dp"
-        android:background="@drawable/slicemale" />
-
-    <Button
         android:id="@+id/serve"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -86,23 +78,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/relativeLayout1"
-        android:layout_toLeftOf="@+id/serve"
+        android:layout_toRightOf="@+id/serve"
         android:background="@drawable/forehandmale" />
-
-    <Button
-        android:id="@+id/backhand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/serve"
-        android:layout_toLeftOf="@+id/forehand"
-        android:background="@drawable/backhandmale" />
 
     <Button
         android:id="@+id/volley"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/forehand"
-        android:layout_toLeftOf="@+id/slice"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_toLeftOf="@+id/serve"
         android:background="@drawable/volleymale" />
+
+    <Button
+        android:id="@+id/backhand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/volley"
+        android:layout_toLeftOf="@+id/volley"
+        android:background="@drawable/backhandmale" />
+
+    <Button
+        android:id="@+id/slice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/serve"
+        android:layout_alignBottom="@+id/serve"
+        android:layout_toRightOf="@+id/forehand"
+        android:background="@drawable/slicemale" />
 
 </RelativeLayout>

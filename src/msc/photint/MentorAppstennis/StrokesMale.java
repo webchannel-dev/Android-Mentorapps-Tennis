@@ -87,17 +87,17 @@ public class StrokesMale extends Activity {
         fore.setOnClickListener(new View.OnClickListener() {
 	          public void onClick(View view) {
 	        	 forehand(); 
-	        		MediaPlayer mp = MediaPlayer.create(StrokesMale.this, R.raw.sound);   
-	                mp.start();
-	                mp.setOnCompletionListener(new OnCompletionListener() {
-
-	                    
-	                    public void onCompletion(MediaPlayer mp) {
-	                        // TODO Auto-generated method stub
-	                        mp.release();
-	                    }
-
-	                });
+//	        		MediaPlayer mp = MediaPlayer.create(StrokesMale.this, R.raw.sound);   
+//	                mp.start();
+//	                mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//	                    
+//	                    public void onCompletion(MediaPlayer mp) {
+//	                        // TODO Auto-generated method stub
+//	                        mp.release();
+//	                    }
+//
+//	                });
 	        	  	        	  
 		      	  }
 		        });
@@ -105,33 +105,33 @@ public class StrokesMale extends Activity {
 	          public void onClick(View view) {
 	        	 backhand(); 
 	        	  
-	        	 MediaPlayer mp = MediaPlayer.create(StrokesMale.this, R.raw.sound);   
-	                mp.start();
-	                mp.setOnCompletionListener(new OnCompletionListener() {
-
-	                    
-	                    public void onCompletion(MediaPlayer mp) {
-	                        // TODO Auto-generated method stub
-	                        mp.release();
-	                    }
-
-	                });	        	  
+//	        	 MediaPlayer mp = MediaPlayer.create(StrokesMale.this, R.raw.sound);   
+//	                mp.start();
+//	                mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//	                    
+//	                    public void onCompletion(MediaPlayer mp) {
+//	                        // TODO Auto-generated method stub
+//	                        mp.release();
+//	                    }
+//
+//	                });	        	  
 		      	  }
 		        });
         serve.setOnClickListener(new View.OnClickListener() {
 	          public void onClick(View view) {
 	        	 serve(); 
-	        	 MediaPlayer mp = MediaPlayer.create(StrokesMale.this, R.raw.sound);   
-	                mp.start();
-	                mp.setOnCompletionListener(new OnCompletionListener() {
-
-	                    
-	                    public void onCompletion(MediaPlayer mp) {
-	                        // TODO Auto-generated method stub
-	                        mp.release();
-	                    }
-
-	                });
+//	        	 MediaPlayer mp = MediaPlayer.create(StrokesMale.this, R.raw.sound);   
+//	                mp.start();
+//	                mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//	                    
+//	                    public void onCompletion(MediaPlayer mp) {
+//	                        // TODO Auto-generated method stub
+//	                        mp.release();
+//	                    }
+//
+//	                });
 	        	  	        	  
 		      	  }
 		        });
@@ -145,36 +145,36 @@ public class StrokesMale extends Activity {
         slice.setOnClickListener(new View.OnClickListener() {
 	          public void onClick(View view) {
 	        	 slice(); 
-	        	 MediaPlayer mp = MediaPlayer.create(StrokesMale.this, R.raw.sound);   
-	                mp.start();
-	                mp.setOnCompletionListener(new OnCompletionListener() {
-
-	                    
-	                    public void onCompletion(MediaPlayer mp) {
-	                        // TODO Auto-generated method stub
-	                        mp.release();
-	                    }
-
-	                });
-	        	  	        	  
+//	        	 MediaPlayer mp = MediaPlayer.create(StrokesMale.this, R.raw.sound);   
+//	                mp.start();
+//	                mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//	                    
+//	                    public void onCompletion(MediaPlayer mp) {
+//	                        // TODO Auto-generated method stub
+//	                        mp.release();
+//	                    }
+//
+//	                });
+//	        	  	        	  
 		      	  }
 		        });
         
         volley.setOnClickListener(new View.OnClickListener() {
 	          public void onClick(View view) {
 	        	 volley(); 
-	        	 MediaPlayer mp = MediaPlayer.create(StrokesMale.this, R.raw.sound);   
-	                mp.start();
-	                mp.setOnCompletionListener(new OnCompletionListener() {
-
-	                    
-	                    public void onCompletion(MediaPlayer mp) {
-	                        // TODO Auto-generated method stub
-	                        mp.release();
-	                    }
-
-	                }); 
-	        	  	        	  
+//	        	 MediaPlayer mp = MediaPlayer.create(StrokesMale.this, R.raw.sound);   
+//	                mp.start();
+//	                mp.setOnCompletionListener(new OnCompletionListener() {
+//
+//	                    
+//	                    public void onCompletion(MediaPlayer mp) {
+//	                        // TODO Auto-generated method stub
+//	                        mp.release();
+//	                    }
+//
+//	                }); 
+//	        	  	        	  
 		      	  }
 		        });
         
